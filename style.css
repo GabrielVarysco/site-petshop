@@ -1,0 +1,329 @@
+*{
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0px;
+    color: #404040;
+    background-color: #e0e0e0;
+    background-image: url(imagens/fundo.jpg);
+}
+
+a {
+    text-decoration: none;
+}
+
+.container{
+    background-color: #fff;
+    padding-bottom: 80px;
+}
+
+.topo {
+    padding: 0px 40px;
+    width: 100vw;
+    margin: 0 auto;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px #333;
+    background-color: #fff;
+    box-sizing: border-box; 
+}
+
+.logo {
+    font-size: 38px;
+    font-weight: bold;
+    color: #84b840;
+    float: left;
+}
+
+footer{
+    background-color: #fff;
+    border-top: #606060 solid 2px;
+    font-size: 14px;
+    padding: 10px !important;
+    text-align: center;
+}
+
+
+/* MENU DESKTOP */
+
+.menu {
+    float: right;
+}
+
+.menu li {
+    display: inline-block;
+    list-style: none;
+}
+
+
+.menu li a {
+    padding: 10px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    font-size: 25px;
+
+}
+
+.menu a:hover {
+    background-color: #f0f0f0;
+}
+
+/* MENU MOBILE */
+
+.botao-menu-mobile {
+    display: none;
+    margin-top: 55px;
+    margin-right: 15px;
+}
+
+.barra {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: black;
+    text-align: right;
+
+}
+
+.barra:nth-child(2) {
+    display: block;
+    width: 15px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: black;
+    text-align: right;
+    transition: all 1s ease;
+}
+
+.botao-menu-mobile:hover {
+    .barra:nth-child(2) {
+        width: 25px;
+    }
+}
+
+.menu-mobile-aberto {
+    width: 0px; 
+    height: 100%;
+    background-color: #404040;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    right: 0; 
+    left: 0;
+    transition: all 1s ease;
+    overflow: hidden;
+    opacity: 0;
+    text-align: center;
+    z-index: 2;
+
+}
+
+#abrir:target {  
+    width: 300px;
+    opacity: 1;
+}
+
+
+.menu-mobile ul {
+    padding: 0;
+}
+
+.menu-mobile li{
+    list-style: none;
+    padding: 20px 0;
+}
+
+.menu-mobile li:active {
+    background: #f0f0f0;
+}
+
+.menu-mobile li a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.fechar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media (max-width:853px) {
+    .botao-menu-mobile{display:block}
+    .menu ul{display: none;}
+}
+
+@media (max-width:400px) {
+    #abrir:target {  
+        width: 100%;
+        opacity: 1;
+    }
+}
+
+@media (min-width:854px) {
+    #abrir:target {
+        opacity: 0;
+    }
+}
+
+/* Home */
+
+.banner{
+    width: 800px;
+}
+
+.carrossel{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: #606060 2px solid;
+}
+
+.carousel-inner{
+    text-align: center;
+}
+
+.carousel-control-prev, .carousel-control-next{
+    color: #333;
+    background-color: #333;
+}
+
+.patrocinadores{
+    text-align: center;
+    padding-bottom: 0px;
+}
+
+.patrocina{
+    background-color: #606060;
+    color: white;
+}
+
+.patrocimg{
+    width: 100px;
+    margin-right: 50px;
+    height: 100px;
+    box-sizing: content-box;
+    margin-bottom: 10px;
+}
+
+.agendarHome{
+    padding-bottom: 0px;
+    border-bottom: #606060 solid 2px;
+    border-top: #606060 solid 2px;
+}
+
+.agendarHomeP{
+    text-align: center;
+    padding-bottom: 0px;
+    background-color: #606060;
+    color: white;
+}
+
+.agendarHomeRow{
+    padding-top: 0px !important;
+}
+
+.tituloProdutosHome{
+    text-align: center;
+    padding-top: 10px;
+}
+
+.produtosHome{
+    text-align: center;
+    padding-bottom: 0px;
+    background-color: #606060;
+    color: white;
+}
+
+.produtosHomeRow{
+    padding-top: 0px !important;
+}
+
+
+/* Sobre Nós */
+
+.PSobre{
+    padding: 10px 250px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.ASobre{
+    font-size: 15px;
+}
+
+#ultimo{
+    margin-bottom: 0px;
+}
+
+@media (max-width: 1200px) {
+    .PSobre {
+        padding: 10px 30px;
+    }
+}
+
+@media (min-width: 768px){
+  .imgSobre{
+      height: 400px;
+      width: 600px;
+    }
+}
+
+
+
+/* Serviços */
+
+.PServicos{
+    font-size: 20px;
+    padding: 10px 100px;
+}
+
+.row{
+    padding: 20px;
+    border-top: #606060 solid 2px;
+}
+
+/* Formulário */
+
+.Aviso {
+    font-size: small;
+}
+
+.formulario{
+    border-top: #606060 2px solid;
+}
+
+.form{
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.btn {
+    background-color: #ffc107;
+    color: black;
+    border-color: #ffc107;
+}
+
+/* Produtos */
+
+.H2Produtos{
+    text-align: center;
+    border-top: #606060 2px solid;
+}
+
+
+@media (max-width: 770px) {
+    iframe{
+        width: 50%;
+        height: 50%;
+    }
+}

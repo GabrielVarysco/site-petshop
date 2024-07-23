@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="topo">
+        <div class="logo">
+          <img src="imagens/logo.png" alt="Logo PetShop">
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="formulario.html">Agendamento</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="sobre.html">Sobre nós</a></li>
+            </ul>
+    
+            <div class="botao-menu-mobile">
+                <a href="#abrir">
+                <span class="barra"></span>
+                <span class="barra"></span>
+                <span class="barra"></span> 
+                </a>
+            </div>
+    
+        </nav>
+      </header>
+    
+    <div id="abrir" class="menu-mobile-aberto">
+      <nav class="menu-mobile">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="formulario.html">Agendamento</a></li>
+          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="sobre.html">Sobre nós</a></li>
+        </ul>
+      </nav>
+    </div>
+
+
+  <main>
+    <div class="container">
+      <h2 class="H2Produtos">Produtos Para Cachorros</h2>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-body">
+              <img class="card-img-top" src="imagens/racaoLata.png" alt="Ração em Lata">
+              <h5 class="card-title">Ração em lata Pedgree</h5>
+              <p class="card-text">Ração em lata pedgree com um sabor delicioso de carne que seu cachorro irá adorar.</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#RacaoCachorro">
+                    Ver produto
+                </button>
+            
+                <div class="modal fade" id="RacaoCachorro" tabindex="-1" role="dialog" aria-labelledby="RacaoCachorroTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="RacaoCachorroTitle">Ração em lata Pedgree</h5>
+                        </div>
+                        <div class="modal-body">
+                        Preço: R$ 9,90
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-body">
+              <img class="card-img-top" src="imagens/racaoPedPequenas.avif" alt="Ração de Saco Pedgree">
+              <h5 class="card-title">Ração em saco Pedgree Raças Pequenas</h5>
+              <p class="card-text">Ração em saco Pedgree para cachorros de raças pequenas e minis com sabor de carne e vitaminas.</p>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#RacaoCachorroPequeno">
+                Ver produto
+            </button>
+        
+            <div class="modal fade" id="RacaoCachorroPequeno" tabindex="-1" role="dialog" aria-labelledby="RacaoCachorroPequenoTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="RacaoCachorroPequenoTitle">Ração em saco Pedgree Raças Pequenas
+                    </h5>
+                    </div>
+                    <div class="modal-body">
+                    Preço: R$ 165,00
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+                </div>
+            </div>            
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-body">
+              <img class="card-img-top bolinha" src="imagens/bolinha.png" alt="Ração em Lata">
+              <h5 class="card-title">Bolinha de borracha</h5>
+              <p class="card-text">Bolinha de borracha de diversas cores para seu cachorro brincar até cansar.</p>
+
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Bolinha">
+                Ver produto
+            </button>
+            <div class="modal fade" id="Bolinha" tabindex="-1" role="dialog" aria-labelledby="BolinhaTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="BolinhaTitle">Bolinha de borracha</h5>
+                    </div>
+                    <div class="modal-body">
+                    Preço: R$ 6,90
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <h2 class="H2Produtos">Produtos para Gatos</h2>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-body">
+              <img class="card-img-top" src="imagens/gatoMolhado.png" alt="Ração molhada para gatos">
+              <h5 class="card-title">Ração Molhada kitekat</h5>
+              <p class="card-text">Ração molhada em sachê para gatos com sabor de peixe ao molho.</p>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#RacaoMolhada">
+                Ver produto
+            </button>
+            <div class="modal fade" id="RacaoMolhada" tabindex="-1" role="dialog" aria-labelledby="RacaoMolhadaTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="RacaoMolhadaTitle">Ração Molhada kitekat</h5>
+                    </div>
+                    <div class="modal-body">
+                    Preço: R$ 2,99
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-body">
+              <img class="card-img-top" src="imagens/racaoWhiskasGATO.avif" alt="Ração de Saco Whiskas para Gatos">
+              <h5 class="card-title">Ração em saco para gatos</h5>
+              <p class="card-text">Ração em saco para gatos com sabor de carne deliciosa com cenoura e alface.</p>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#RacaoGatos">
+                Ver produto
+            </button>
+            <div class="modal fade" id="RacaoGatos" tabindex="-1" role="dialog" aria-labelledby="RacaoGatosTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="RacaoGatosTitle">Ração em saco para gatos</h5>
+                    </div>
+                    <div class="modal-body">
+                    Preço: R$ 49,99
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-body">
+              <img class="card-img-top bolinha" src="imagens/rato.png" alt="brinquedo para gatos">
+              <h5 class="card-title">Ratinho de brinquedo</h5>
+              <p class="card-text">Ratinho de brinquedo feito de cordas para seu gato se divertir e caçar.</p>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Ratinho">
+                Ver produto
+            </button>
+            <div class="modal fade" id="Ratinho" tabindex="-1" role="dialog" aria-labelledby="RatinhoTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="RatinhoTitle">Ratinho de brinquedo</h5>
+                    </div>
+                    <div class="modal-body">
+                    Preço: R$ 12,50
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <h2 class="H2Produtos">Produtos para Peixes</h2>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-body">
+              <img class="card-img-top" src="imagens/racaoPeixe.png" alt="Ração em saco para peixes">
+              <h5 class="card-title">Ração em saco Peixecol</h5>
+              <p class="card-text">Ração em saco da marca Peixecol 25kg.</p>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#RacaoPeixe">
+                Ver produto
+            </button>
+    
+            <div class="modal fade" id="RacaoPeixe" tabindex="-1" role="dialog" aria-labelledby="RacaoPeixeTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="RacaoPeixeTitle">Ração em saco Peixecol</h5>
+                    </div>
+                    <div class="modal-body">
+                    Preço: R$ 68,50
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-body">
+              <img class="card-img-top" src="imagens/castelo.png" alt="Castelo para aquario">
+              <h5 class="card-title">Castelo para aquário</h5>
+              <p class="card-text">Castelo de decoração para aquarios.</p>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Castelo">
+                Ver produto
+            </button>
+            <div class="modal fade" id="Castelo" tabindex="-1" role="dialog" aria-labelledby="CasteloTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="CasteloTitle">Castelo para aquário</h5>
+                    </div>
+                    <div class="modal-body">
+                    Preço: R$ 33,99
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-body">
+              <img class="card-img-top bolinha" src="imagens/aquario.png" alt="aquário">
+              <h5 class="card-title">Aquário para peixes</h5>
+              <p class="card-text">Aquário grande para peixes pequenos e médios com espaço para plantas e decorações.</p>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Aquario">
+                Ver produto
+            </button>
+        
+            <div class="modal fade" id="Aquario" tabindex="-1" role="dialog" aria-labelledby="AquarioTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="AquarioTitle">Aquário para peixes</h5>
+                    </div>
+                    <div class="modal-body">
+                    Preço: R$ 150,00
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+    <footer>
+        <p>Copyright &copy;2024 - by Gabriel Varysco & Krishna Eduardo <br>
+        <a href="https://twitter.com/Clouborets" target="_blank">Twitter</a> | 
+        <a href="https://www.instagram.com/varysco/" target="_blank">Instagram</a>
+        </p>
+    </footer>
+    
+</body>
+</html>

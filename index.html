@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="topo">
+    <div class="logo">
+      <img src="imagens/logo.png" alt="Logo PetShop">
+    </div>
+    <nav class="menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="produtos.html">Produtos</a></li>
+        <li><a href="formulario.html">Agendamento</a></li>
+        <li><a href="servicos.html">Serviços</a></li>
+        <li><a href="sobre.html">Sobre nós</a></li>
+      </ul>
+
+      <div class="botao-menu-mobile">
+        <a href="#abrir">
+          <span class="barra"></span>
+          <span class="barra"></span>
+          <span class="barra"></span> 
+        </a>
+      </div>
+
+    </nav>
+  </header>
+
+  <div id="abrir" class="menu-mobile-aberto">
+    <nav class="menu-mobile">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="produtos.html">Produtos</a></li>
+        <li><a href="formulario.html">Agendamento</a></li>
+        <li><a href="servicos.html">Serviços</a></li>
+        <li><a href="sobre.html">Sobre nós</a></li>
+      </ul>
+    </nav>
+  </div>
+
+
+
+<main>
+  <div class="container carrossel">
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="banner" src="imagens/banner1.png" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+          <img class="banner" src="imagens/banner2.png" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+          <img class="banner" src="imagens/banner3.png" class="d-block w-100">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="patrocinadores container">
+    <p class="patrocina">Patrocinadores</p>
+    <img class="patrocimg" src="imagens/Royal-Canin-Logo.png" alt="">
+    <img class="patrocimg" src="imagens/threeCats.png" alt="">
+    <img class="patrocimg" src="imagens/threeDogs.png" alt="">
+    <img class="patrocimg" src="imagens/whiskas.png" alt="">
+  </div>
+
+  <section class="about section-padding" id="about">
+		<div class="agendarHome container">
+		  <div class="agendarHomeRow row">
+        <p class="agendarHomeP">Agendar</p>
+				<div class="col-lg-4 col-md-12 col-12">
+					<div class="about-img"><img alt="" class="img-fluid" src="imagens/cachorroBanho1.jpg"></div>
+				</div>
+				<div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
+					<div class="about-text">
+						<h2>Deseja agendar conosco?</h2>
+						<p>Clique no botão abaixo para dar uma olhada em nossos serviços e agendar um horário com um de nossos especialistas!</p>
+						<a class="btn btn-warning" href="formulario.html">Agende aqui</a>
+					</div>
+				</div>
+	    </div>
+    </div>
+
+  <div class="container">
+    <div class="produtosHomeRow row">
+      <p class="produtosHome">Produtos</p>
+      <div class="col-sm-4">
+        <div class="card">
+          <div class="card-body">
+            <img class="card-img-top" src="imagens/racaoLata.png" alt="Ração em Lata">
+            <h5 class="card-title">Ração em lata Pedgree</h5>
+            <p class="card-text">Ração em lata pedgree com um sabor delicioso de carne que seu cachorro irá adorar.</p>
+            <a href="#" class="btn btn-primary">Ir à loja</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card">
+          <div class="card-body">
+            <img class="card-img-top" src="imagens/racaoWhiskasGATO.avif" alt="Ração de Saco Whiskas para Gatos">
+            <h5 class="card-title">Ração em saco para gatos</h5>
+            <p class="card-text">Ração em saco para gatos com sabor de carne deliciosa com cenoura e alface.</p>
+            <a href="#" class="btn btn-primary">Ir à loja</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card">
+          <div class="card-body">
+            <img class="card-img-top bolinha" src="imagens/bolinha.png" alt="Ração em Lata">
+            <h5 class="card-title">Bolinha de borracha</h5>
+            <p class="card-text">Bolinha de borracha de diversas cores para seu cachorro brincar até cansar.</p>
+            <a href="#" class="btn btn-primary">Ir à loja</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+  <footer>
+    <p>Copyright &copy;2024 - by Gabriel Varysco & Krishna Eduardo <br>
+    <a href="https://twitter.com/Clouborets" target="_blank">Twitter</a> | 
+    <a href="https://www.instagram.com/varysco/" target="_blank">Instagram</a>
+    </p>
+  </footer> 
+
+</body>
+</html>
